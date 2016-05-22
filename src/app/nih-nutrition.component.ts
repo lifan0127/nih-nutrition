@@ -36,32 +36,38 @@ import { ModalWindowComponent } from './modal-window';
 export class NihNutritionAppComponent {
   title = 'Analysis of NIH Spending on Nutrition Research';
   visuals: Object[] = [
-    { 
-      id: 0,
-      title: 'Timeline', 
-      description: 'Timeline to visualize NIH press releases on nutrition-related topics.'
+    {
+      title: 'Breakthroughs & Significant Events', 
+      description: 'Timeline to visualize NIH breakthroughs and significant events on nutrition-related topics.',
+      source: 'nih-event-timeline.json',
+      visual: 'timeline'
     },
     {
-      id: 1,
-      title: 'Spending',
-      description: 'NIH spending trend on nutrition-related researches.'
+      title: 'NIH Spending Trend',
+      description: 'NIH spending trend on nutrition-related researches.',
+      source: 'nih-spending-trend.json',
+      visual: 'barchart'
     },
     {
-      id: 2,
-      title: 'Project',
-      description: 'NIH-sponsored research projects in nutrition research.'
+      title: 'Overview of NIH-Sponsored Projects',
+      description: 'NIH-sponsored research projects in nutrition research.',
+      source: 'nih-project-overview.json',
+      visual: 'linechart'
     },
     {
-      id: 3,
       title: 'Organization',
-      description: 'Overview of organizations supported by NIH grant.'
+      description: 'Overview of organizations supported by NIH grant.',
+      source: 'nih-funded-organizations.json',
+      visual: 'map'
     }
   ];
-  entry: {id: string, type: string};
+  entry: {title: string, description: string, source: string, visual: string};
   modal = false;
+  view = 'visual';
   
-  openModal(id, type) {
-    this.entry = {id: id, type: type};
+  openModal(entry, view) {
+    this.entry = entry;
+    this.view = view;
     this.modal = true;
   }
   

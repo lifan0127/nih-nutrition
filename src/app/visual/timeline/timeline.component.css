@@ -1,0 +1,24 @@
+.scrollable-div { 
+    width: 50%; 
+    height: 400px; 
+    overflow-y: scroll;
+}
+
+.selected-event { 
+    float: right; 
+    width: 50%;
+}
+
+svg { 
+    font-family: arial; 
+    font-size: 12px;
+}
+
+svg g.individual-event:hover { 
+    cursor: pointer
+}
+      
+svg g.individual-event:hover circle, 
+svg g.individual-event:hover rect { 
+    fill:#D0EAFF 
+}

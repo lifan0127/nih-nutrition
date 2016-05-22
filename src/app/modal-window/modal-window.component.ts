@@ -1,5 +1,6 @@
 /// <reference path="../../typings.d.ts" />
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Http } from '@angular/http';
 import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
 
 @Component({
@@ -13,11 +14,16 @@ import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
   providers: [MdIconRegistry]
 })
 export class ModalWindowComponent implements OnInit {
-  @Input() entry: {id: string, type: string};
+  @Input() entry: {title: string, description: string, source: string, visual: string, data?: Object};
+  @Input() view: string;
   @Output() close = new EventEmitter();
-  constructor() {}
+  constructor(
+    private http: Http
+  ) {}
 
   ngOnInit() {
+    this.entry.data = this.http.get('../../data/' + this.entry.source)
+                               .map(res => res.json())
   }
   
   closeModal() {

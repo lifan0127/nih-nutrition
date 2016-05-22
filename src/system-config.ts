@@ -54,6 +54,8 @@ const barrels: string[] = [
   'app',
   'app/shared',
   'app/modal-window',
+  'app/visual/timeline',
+  'app/shared/json-viewer',
   /** @cli-barrel */
 ];
 
