@@ -1,3 +1,20 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-layout fullscreen>
+  <md-toolbar color="alert">
+    <div style='font-size:32px;'><span style='font-weight:bold;'>KNOVO</span>TECH</div>
+    <!--<button md-fab (click)="formShowing=!formShowing">
+      <md-icon>add</md-icon>
+    </button>-->
+  </md-toolbar>
+
+  <div class="card-container">
+    <md-card *ngFor="let vis of visuals">
+      <md-card-title>{{ vis.title }}</md-card-title>
+      <md-card-content class="secondary">{{ vis.description }}</md-card-content>
+      <md-card-actions align="end">
+        <button md-button color="primary">Visual</button>
+        <button md-button color="primary">Data</button>
+      </md-card-actions>
+    </md-card>
+  </div>
+
+</md-sidenav-layout>
