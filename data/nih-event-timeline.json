@@ -1,0 +1,182 @@
+{
+    "title": "Selected Nutrition-Related NIH News in 2011 - 2014",
+    "description": "NIH-supported nutrition research led to a number of important discoveries in 2011 - 2014. Many of these discoveries were announced in an NIH News Release or published in NIH Research Matters, a biweekly update of NIH research highlights from the Office of Communications and Public Liaison, Office of the Director. This data is a more comprehensive list of NIH nutrition-related press releases and Nutrition Research Matters articles.",
+    "source": [
+        { 
+            "title": "NIH Nutrition Research Report 2011 & 2012", 
+            "url": "http://www.niddk.nih.gov/about-niddk/strategic-plans-reports/Pages/nih-nutrition-research-report-2011-2012.aspx" 
+        }, 
+        {
+            "title": "NIH Nutrition Research Report 2013 & 2014",
+            "url": "http://www.niddk.nih.gov/about-niddk/strategic-plans-reports/Pages/NIH-nutrition-research-report-2013-2014.aspx"
+        }
+    ],
+    "created": "2016-05-15T02:03:37.030Z",
+    "updated": "2016-05-15T02:03:37.030Z",
+    "data": [
+        {
+            "date": "2011-03-31T04:00:00.000Z",
+            "title": "New strategic plan for NIH obesity research seeks to curb epidemic",
+            "description": "Researchers, health care professionals, the public create comprehensive plan: To combat the obesity epidemic, the National Institutes of Health is encouraging diverse scientific investigations through a new Strategic Plan for NIH Obesity Research. Highlighting the crucial role of research in efforts to reduce obesity, the plan emphasizes moving science from laboratory to clinical trials to practical solutions, and is designed to help target efforts and resources in areas most likely to help. To increase the reach of research and improve public health, the plan also highlights education and outreach to move proven strategies into community programs and medical practice.",
+            "url": "https://www.nih.gov/news-events/news-releases/new-strategic-plan-nih-obesity-research-seeks-curb-epidemic",
+            "funding": ["American Recovery and Reinvestment Act"],
+            "youtube": ["https://www.youtube.com/embed/QeUpQQyIx34"]
+        },
+        {
+            "date": "2011-04-13T04:00:00.000Z",
+            "title": "Complementary and alternative medicine dialogue lacking between patients, providers",
+            "description": "New survey from AARP and the National Center for Complementary and Alternative Medicine (NCCAM) finds that although many people 50+ use complementary and alternative medicine (CAM), they often do not inform their health care providers. Overall, 53 percent of respondents reported that they had used CAM at some point in their lives. Among those, 58 percent said they had discussed CAM with a health care provider. The AARP/NCCAM survey was conducted by telephone interview in October 2010, with a random sample of 1,013 people aged 50 and older.",
+            "url": "https://nccih.nih.gov/news/2011/041311.htm"
+        },
+        {
+            "date": "2011-04-26T04:00:00.000Z",
+            "title": "NIH launches Web resource on complementary and alternative medicine",
+            "description": "Evidence-based information for health care providers: A new online resource, designed to give health care providers easy access to evidence-based information on complementary and alternative medicine (CAM), was unveiled today by the National Center for Complementary and Alternative Medicine (NCCAM) of the National Institutes of Health. With this new resource, providers will have the tools necessary to learn about the various CAM practices and products and be better able to discuss the safety and effectiveness of complementary and alternative medicine with their patients. This resource was developed based on a series of NCCAM-sponsored focus groups where health care providers identified the need for an evidence-based, one-stop place to help answer their patients’ questions on CAM.",
+            "url": "https://www.nih.gov/news-events/news-releases/nih-launches-web-resource-complementary-alternative-medicine"
+        },
+        {
+            "date": "2011-04-27T04:00:00.000Z",
+            "title": "Vitamin E helps diminish a type of fatty liver disease in children",
+            "description": "NIH-funded researchers gain ground in treatment: A specific form of vitamin E improved the most severe form of fatty liver disease in some children, according to a study funded by the National Institutes of Health. Results appear in the April 27 issue of the Journal of the American Medical The Treatment of Nonalcoholic Fatty Liver Disease in Children (TONIC) trial studied whether vitamin E (an antioxidant) or metformin could improve fatty liver disease. The endpoint to measure success was either a sustained reduction in the liver enzyme alanine aminotransferase (ALT) or improvements in the liver as shown by biopsies. Learn more about TONIC at www.clinicaltrials.gov (search for NCT00063635)",
+            "url": "https://www.nih.gov/news-events/news-releases/vitamin-e-helps-diminish-type-fatty-liver-disease-children",
+            "trial": ["NCT00063635"]
+        },
+        {
+            "date": "2011-05-26T04:00:00.000Z",
+            "title": "NIH stops clinical trial on combination cholesterol treatment",
+            "description": "Lack of efficacy in reducing cardiovascular events prompts decision: The National Heart, Lung, and Blood Institute (NHLBI) of the National Institutes of Health has stopped a clinical trial studying a blood lipid treatment 18 months earlier than planned. The AIM-HIGH trial, which stands for Atherothrombosis Intervention in Metabolic Syndrome with Low HDL/High Triglycerides: Impact on Global Health, found that adding high dose, extended-release niacin to statin treatment in people with heart and vascular disease, did not reduce the risk of cardiovascular events, including heart attacks and stroke.",
+            "url": "https://www.nih.gov/news-events/news-releases/nih-stops-clinical-trial-combination-cholesterol-treatment",
+            "funding": ["National Heart, Lung, and Blood Institute (NHLBI)", "Abbott Laboratories"],
+            "trial": ["NCT00120289"]
+        },
+        {
+            "date": "2011-06-08T04:00:00.000Z",
+            "title": "NIH study addresses concerns about high folate levels",
+            "description": "Increased folic acid from supplements, fortified foods not likely to affect B12 deficiency: Taking folic acid supplements or eating fortified grain products is unlikely to worsen problems related to low levels of vitamin B12, according to researchers at the National Institutes of Health, the University of California - Berkeley, Trinity College in Ireland, the Health Research Board of Ireland; and the University of Bergen in Norway. Their findings appear in the American Journal of Clinical Nutrition.",
+            "url": "https://www.nih.gov/news-events/news-releases/nih-study-addresses-concerns-about-high-folate-levels",
+            "funding": ["National Institute of Child Health and Human Development (NICHD)"]
+        },
+        {
+            "date": "2011-06-09T04:00:00.000Z",
+            "title": "Potential new target for smoking cessation without weight gain",
+            "description": "NIH-funded study identifies brain pathway in rodents that could be target of new treatments for smoking and weight control: A new study uncovers a brain mechanism that could be targeted for new medications designed to help people quit smoking without gaining weight. This research, to be published in Science, shows that a specific subclass of brain nicotinic receptor is involved in nicotine’s ability to reduce food intake in rodents. The researchers found that a nicotine-like drug, cytisine, specifically activated nicotinic receptors in the hypothalamus — a brain center that controls feeding. ",
+            "url": "https://www.nih.gov/news-events/news-releases/potential-new-target-smoking-cessation-without-weight-gain",
+            "funding": ["National Institute on Drug Abuse (NIDA)"],
+            "youtube": ["https://www.youtube.com/embed/rVciZV4G-c8"]
+        },
+        {
+            "date": "2011-07-05T04:00:00.000Z",
+            "title": "NIH findings in mice have potential to curb obesity and type 2 diabetes",
+            "description": "Discovery makes white fat mimic energy-burning brown fat, muscle: Reported in Cell Metabolism, cientists at the National Institutes of Health have uncovered a pathway in mice that allows white fat — a contributor to obesity and type 2 diabetes — to burn calories in a way that’s normally found in brown fat and muscle. The researchers next plan to design a more targeted approach to partially transform white fat of mice into the brown fat or muscle-like state without compromising the immune system.",
+            "url": "https://www.nih.gov/news-events/news-releases/nih-findings-mice-have-potential-curb-obesity-type-2-diabetes",
+            "funding": ["National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)"]
+        },
+        {
+            "date": "2011-07-06T04:00:00.000Z",
+            "title": "NIH effort seeks to identify measures of nutritional status",
+            "description": "Development of nutrition biomarkers would assist researchers, clinicians, and policy makers: The Biomarkers of Nutrition for Development (BOND) Program brings together experts in the field of nutrition to provide advice to researchers, clinicians, program — and policymakers, on the role of food and nutrition in health promotion and disease prevention. The BOND program seeks to identify nutritional biomarkers — substances that indicate how much of a nutrient a person has eaten and how the body is using that nutrient.",
+            "url": "https://www.nih.gov/news-events/news-releases/nih-effort-seeks-identify-measures-nutritional-status",
+            "funding": ["National Institute of Child Health and Human Development (NICHD)", "Bill and Melinda Gates Foundation", "European Micronutrient Recommendations Aligned", "Micronutrient Genomics Project", "PepsiCo"]
+        },
+        {
+            "date": "2011-07-11T04:00:00.000Z",
+            "title": "Receptor limits the rewarding effects of food and cocaine",
+            "description": "Researchers have long known that dopamine, a brain chemical that plays important roles in the control of normal movement, and in pleasure, reward and motivation, also plays a central role in substance abuse and addiction. In a new animal study published in Nature Neuroscience, scientists found that a specific dopamine receptor, called D2, on dopamine-containing neurons controls an organism's activity level and contributes to motivation for reward-seeking as well as the rewarding effects of cocaine.",
+            "url": "https://www.nih.gov/news-events/news-releases/receptor-limits-rewarding-effects-food-cocaine",
+            "funding": ["National Institute on Alcohol Abuse and Alcoholism (NIAAA)"]
+        },
+        {
+            "date": "2011-07-21T04:00:00.000Z",
+            "title": "Zinc ‘sparks’ fly from egg within minutes of fertilization",
+            "description": "NIH-funded study of animal eggs reveals major role for metal: At fertilization, a massive release of the metal zinc appears to set the fertilized egg cell on the path to dividing and growing into an embryo, according to the results of animal studies published in ACS Chemical Biology. The findings may one day lead to information useful for the treatment of infertility as well as the development of new ways to prevent fertilization from occurring.",
+            "url": "https://www.nih.gov/news-events/news-releases/zinc-sparks-fly-egg-within-minutes-fertilization",
+            "funding": ["National Institute of Child Health and Human Development (NICHD)"],
+            "image": [
+                {
+                    "file": "12a316c3-dad6-991d-8c9a-a001c104a546.jpg", 
+                    "caption": "Recent findings suggest a major role for zinc in reproduction. In observations from egg cells, researchers found that massive intake of zinc can put a brake on cell division as the egg matures and awaits fertilization (A). Fertilization of the egg (B) triggers cyclical changes in the levels of calcium (C). It also generates zinc sparks (D) from the cell that lift the brake on development."
+                }
+            ]
+        },
+        {
+            "date": "2011-08-18T04:00:00.000Z",
+            "title": "Compound improves health, increases lifespan of obese mice",
+            "description": "Researchers have disclosed in Scientific Reports that obese male mice treated with a patented synthetic compound called SRT1720 were healthier and lived longer compared to non-treated obese mice. The experimental compound was found to improve the function of the liver, pancreas and heart in mice. It demonstrates that years of healthy life can be extended in an animal model of diet-induced obesity by a synthetic compound that modulates a gene pathway associated with aging.",
+            "url": "https://www.nih.gov/news-events/news-releases/compound-improves-health-increases-lifespan-obese-mice",
+            "funding": ["National Institute on Aging (NIA)", "GlaxoSmithKline (GSK)"]
+        },
+        {
+            "date": "2011-08-23T04:00:00.000Z",
+            "title": "Study links low DHA levels to suicide risk among U.S. military personnel",
+            "description": "In an analysis of suicide deaths among U.S. military personnel on active duty between 2002 and 2008, the researchers compared levels of omega-3 fatty acids of 800 individuals who committed suicide with those of 800 randomly selected controls, and found that all the service members had low omega-3 levels, and that suicide risk was greatest among individuals with the lowest levels of docosahexaenoic acid (DHA), the major omega-3 fatty acid concentrated in the brain. This work is reported in the Journal of Clinical Psychiatry.",
+            "url": "https://www.nih.gov/news-events/news-releases/study-links-low-dha-levels-suicide-risk-among-us-military-personnel",
+            "funding": ["National Institute on Alcohol Abuse and Alcoholism (NIAAA)",
+             "Uniformed Services University of the Health Sciences (USUHS)"]
+        },
+        {
+            "date": "2011-08-25T04:00:00.000Z",
+            "title": "Protein linked to Parkinson’s disease may regulate fat metabolism",
+            "description": "Preliminary NIH study may have implications for early onset of the disease: As reported in the Journal of Clinical Investigation,  Parkin, an important protein linked with some cases of early-onset Parkinson’s disease, regulates how cells in our bodies take up and process dietary fats, and thus defective Parkin may indirectly contribute to the development of some early-onset Parkinson's by changing the amount and types of fat in people’s bodies. This discovery shows that the clues to understand Parkinson’s disease may not necessarily be in the brain.",
+            "url": "https://www.nih.gov/news-events/news-releases/protein-linked-parkinsons-disease-may-regulate-fat-metabolism",
+            "funding": ["National Heart, Lung, and Blood Institute (NHLBI)"]
+        },
+        {
+            "date": "2011-08-25T04:00:00.000Z",
+            "title": "NIH research model predicts weight with varying diet, exercise changes",
+            "description": "Findings, published in Lancet, challenge one-size-fits-all weight assumptions: NIH researchers have created a mathematical model — and an accompanying online weight simulation tool — of what happens when people of varying weights, diets and exercise habits try to change their weight. The findings challenge the commonly held belief that eating 3,500 fewer calories — or burning them off exercising — will always result in a pound of weight loss, which fails to account for how metabolism changes.",
+            "url": "https://www.nih.gov/news-events/news-releases/nih-research-model-predicts-weight-varying-diet-exercise-changes",
+            "funding": ["National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)", "Robert Wood Johnson Foundation", "Centers for Disease Control and Prevention", "NIH Office of Behavioral and Social Sciences Research (OBSSR)"]
+        },
+        {
+            "date": "2011-08-30T04:00:00.000Z",
+            "title": "Gene replacement treats copper deficiency disorder in mice",
+            "description": "NIH study first step in possible treatment advance for rare, fatal childhood disease: Gene therapy plus an injection of copper dramatically improved survival in mice with a condition that mimics the often fatal childhood disorder Menkes disease, according to a study published in Molecular Therapy",
+            "url": "https://www.nih.gov/news-events/news-releases/gene-replacement-treats-copper-deficiency-disorder-mice",
+            "funding": ["National Institute of Child Health and Human Development (NICHD)", "National Institute of Neurological Disorders and Stroke (NINDS)"],
+            "image": [
+                {
+                    "file": "454f2b49-9dc6-1352-b995-36be8036e1f7.jpg", 
+                    "caption": "In the study, the researchers injected a virus into the ventricles of mice with a form of Menkes disease. Once inside the ventricles, the virus carried a functioning copy of the ATP7A gene into the cells of the choroid plexus, a structure within the brain that makes cerebrospinal fluid. The ATP7A gene then began functioning inside these brain cells and increased the ability to process copper."
+                }
+            ]
+        },
+        {
+            "date": "2011-09-27T04:00:00.000Z",
+            "title": "Saw palmetto no more effective than placebo for urinary symptoms",
+            "description": "NIH-funded study finds dietary supplement does not alleviate prostate enlargement, also called benign prostatic hyperplasia (BPH): Saw palmetto, a widely used herbal dietary supplement, does not reduce urinary problems associated with prostate enlargement any better than a placebo, according to a study published in the Journal of the American Medical Association. This study further illustrates the importance of conducting research on botanical products that are used extensively by the general public.",
+            "url": "https://www.nih.gov/news-events/news-releases/saw-palmetto-no-more-effective-placebo-urinary-symptoms",
+            "funding": ["National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)", "National Center for Complementary and Alternative Medicine (NCCAM)", "Office of Dietary Supplements (ODS)"],
+            "trial": ["NCT00603304"]
+        },
+        {
+            "date": "2011-10-11T04:00:00.000Z",
+            "title": "NIH-funded study shows increased prostate cancer risk from vitamin E supplements",
+            "description": "Men who took 400 international units (I.U.) of vitamin E daily had more prostate cancers compared to men who took a placebo, according to an updated review of data from the Selenium and Vitamin E Cancer Prevention Trial (SELECT). The findings showed that, per 1,000 men, there were 76 prostate cancers in men who took only vitamin E supplements, vs. 65 in men on placebo over a seven-year period, a 17 percent increase. The results of this study are published in the Journal of the American Medical Association.",
+            "url": "https://www.nih.gov/news-events/news-releases/nih-funded-study-shows-increased-prostate-cancer-risk-vitamin-e-supplements",
+            "funding": ["National Cancer Institute (NCI)"],
+            "trial": ["NCT00006392"]
+        },
+        {
+            "date": "2011-10-13T04:00:00.000Z",
+            "title": "Inefficient developing world stoves contribute to 2 million deaths a year",
+            "description": "An international effort to replace smoky, inefficient household stoves that people commonly use in lower and middle income countries with clean, affordable, fuel efficient stoves could save nearly 2 million lives each year, according to experts from the National Institutes of Health written in a commentary in Science.",
+            "url": "https://www.nih.gov/news-events/news-releases/inefficient-developing-world-stoves-contribute-2-million-deaths-year",
+            "funding": [""],
+            "youtube": ["https://www.youtube.com/embed/T9rgrEo4sMQ"]
+        },
+        {
+            "date": "2011-11-21T04:00:00.000Z",
+            "title": "Cholesterol levels elevated in toddlers taking anti-HIV drugs",
+            "description": "A study published in AIDS shows oddlers receiving anti-HIV drugs have higher cholesterol levels, on average, than do their peers who do not have HIV. The researchers found that cholesterol levels tended to be highest among children who received a certain type of drugs — those known as protease inhibitors. The average cholesterol reading for this group was 169 milligrams per deciliter of blood (mg/dL), compared with 152 mg/dL for children on other antiretroviral drugs and 147 mg/dL for children the same age who did not have HIV.",
+            "url": "https://www.nih.gov/news-events/news-releases/cholesterol-levels-elevated-toddlers-taking-anti-hiv-drugs",
+            "funding": ["National Institute of Child Health and Human Development (NICHD)", "NICHD International Site Development Initiative (NISDI)"]
+        },
+        {
+            "date": "2011-12-20T04:00:00.000Z",
+            "title": "Early dietary experience shapes salt preference of infants and preschoolers",
+            "description": "In a study reported in American Journal of Clinical Nutrition, babies exposed early to starchy, salty foods are found to develop a greater preference for salty taste, by as early as six months of age, than will infants who have not been given salty foods. The exposed babies consumed 55 percent more salt than their unexposed peers during a preference test, which is shown to last into the preschool years. These findings indicate the significant role of early dietary experiences in shaping taste preferences.",
+            "url": "https://www.nih.gov/news-events/news-releases/early-dietary-experience-shapes-salt-preference-infants-preschoolers",
+            "funding": ["National Institute on Deafness and Other Communication Disorders (NIDCD)"]
+        }            
+    ]
+}

@@ -5,18 +5,21 @@
       <md-icon>add</md-icon>
     </button>-->
   </md-toolbar>
-
+  <div style='margin:0 16px;'>
+    <h2>Analysis of NIH-Sponsored Nutrition Research Programs</h2>
+    <p class="secondary">This analysis aims to provide an in-depth analysis of some of the most significant achievements and events stemmed from NIH-sponsored nutrition research programs.</p>
+  </div>
   <div class="card-container">
     <md-card *ngFor="let vis of visuals">
       <md-card-title>{{ vis.title }}</md-card-title>
       <md-card-content class="secondary">{{ vis.description }}</md-card-content>
       <md-card-actions align="end">
-        <button md-button color="primary" (click)='openModal(vis.id, "visual")'>Visual</button>
-        <button md-button color="primary">Data</button>
+        <button md-button color="primary" (click)='openModal(vis, "visual")'>Visual</button>
+        <button md-button color="primary" (click)='openModal(vis, "data")'>Data</button>
       </md-card-actions>
     </md-card>
   </div>
   
-  <app-modal-window *ngIf='modal' [entry]='entry' (close)='closeModal($event)'></app-modal-window>
+  <app-modal-window *ngIf='modal' [entry]='entry' [view]='view' (close)='closeModal($event)'></app-modal-window>
 
 </md-sidenav-layout>

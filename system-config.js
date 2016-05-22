@@ -48,6 +48,8 @@ var barrels = [
     'app',
     'app/shared',
     'app/modal-window',
+    'app/visual/timeline',
+    'app/shared/json-viewer',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
