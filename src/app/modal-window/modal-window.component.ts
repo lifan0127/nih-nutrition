@@ -1,3 +1,4 @@
+/// <reference path="../../typings.d.ts" />
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
 
