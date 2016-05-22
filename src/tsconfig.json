@@ -13,5 +13,11 @@
     "sourceMap": true,
     "target": "es5",
     "inlineSources": true
-  }
+  },
+  "filesGlob": [ 
+    "main.ts", 
+    "typings.d.ts", 
+    "app/**/*.ts", 
+    "!app/**/*.spec.ts" 
+  ]
 }
