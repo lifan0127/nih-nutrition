@@ -47,6 +47,7 @@ var barrels = [
     // App specific barrels.
     'app',
     'app/shared',
+    'app/modal-window',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
