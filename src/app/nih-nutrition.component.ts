@@ -9,6 +9,8 @@ import {MdCheckbox} from '@angular2-material/checkbox';
 import {MdRadioButton, MdRadioGroup, MdRadioDispatcher} from '@angular2-material/radio';
 import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
 
+import { ModalWindowComponent } from './modal-window';
+
 
 @Component({
   moduleId: module.id,
@@ -25,7 +27,8 @@ import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
     MdCheckbox,
     MdRadioGroup,
     MdRadioButton,
-    MdIcon
+    MdIcon,
+    ModalWindowComponent
   ],
   providers: [MdIconRegistry, MdRadioDispatcher],
 
@@ -33,21 +36,36 @@ import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
 export class NihNutritionAppComponent {
   title = 'Analysis of NIH Spending on Nutrition Research';
   visuals: Object[] = [
-    {
-      title: "Timeline", 
-      description: "Timeline to visualize NIH press releases on nutrition-related topics."
+    { 
+      id: 0,
+      title: 'Timeline', 
+      description: 'Timeline to visualize NIH press releases on nutrition-related topics.'
     },
     {
-      title: "Spending",
-      description: "NIH spending trend on nutrition-related researches."
+      id: 1,
+      title: 'Spending',
+      description: 'NIH spending trend on nutrition-related researches.'
     },
     {
-      title: "Project",
-      description: "NIH-sponsored research projects in nutrition research."
+      id: 2,
+      title: 'Project',
+      description: 'NIH-sponsored research projects in nutrition research.'
     },
     {
-      title: "Organization",
-      description: "Overview of organizations supported by NIH grant."
+      id: 3,
+      title: 'Organization',
+      description: 'Overview of organizations supported by NIH grant.'
     }
   ];
+  entry: {id: string, type: string};
+  modal = false;
+  
+  openModal(id, type) {
+    this.entry = {id: id, type: type};
+    this.modal = true;
+  }
+  
+  closeModal(event) {
+    this.modal = false;
+  }
 }

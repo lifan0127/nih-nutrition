@@ -11,10 +11,12 @@
       <md-card-title>{{ vis.title }}</md-card-title>
       <md-card-content class="secondary">{{ vis.description }}</md-card-content>
       <md-card-actions align="end">
-        <button md-button color="primary">Visual</button>
+        <button md-button color="primary" (click)='openModal(vis.id, "visual")'>Visual</button>
         <button md-button color="primary">Data</button>
       </md-card-actions>
     </md-card>
   </div>
+  
+  <app-modal-window *ngIf='modal' [entry]='entry' (close)='closeModal($event)'></app-modal-window>
 
 </md-sidenav-layout>
