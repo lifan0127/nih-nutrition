@@ -3,7 +3,8 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 var map = {
-    '@angular2-material': 'vendor/@angular2-material'
+    '@angular2-material': 'vendor/@angular2-material',
+    'iscroll': 'vendor/iscroll/build/iscroll.js'
 };
 /** User packages configuration. */
 var materialPackages = [

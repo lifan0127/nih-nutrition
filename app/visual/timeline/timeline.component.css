@@ -1,12 +1,17 @@
 .scrollable-div { 
-    width: 50%; 
+    width: 60%; 
     height: 400px; 
-    overflow-y: scroll;
+    position: relative;
+    overflow: hidden;
+}
+
+.scrollable-div > div {
+    padding-right: 14px;
 }
 
 .selected-event { 
     float: right; 
-    width: 50%;
+    width: 40%;
 }
 
 svg { 
@@ -14,11 +19,24 @@ svg {
     font-size: 12px;
 }
 
-svg g.individual-event:hover { 
-    cursor: pointer
+svg g.individual-event.highlighted:hover { 
+    cursor: pointer;
 }
       
-svg g.individual-event:hover circle, 
-svg g.individual-event:hover rect { 
+svg g.individual-event.highlighted circle, 
+svg g.individual-event.highlighted rect { 
     fill:#D0EAFF 
+}
+
+.selected-event div {
+    padding-left: 8px;
+}
+
+.selected-event div h4 {
+        margin: 8px 0;
+}
+
+.selected-event div h4 a, .selected-event div h4 a:visited {
+    text-decoration: none;
+    color: #4EADFF;
 }
