@@ -3,13 +3,19 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Http } from '@angular/http';
 import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
 
+import { TimelineComponent } from '../visual/timeline';
+import { JsonViewerComponent } from '../shared/json-viewer';
+
+
 @Component({
   moduleId: module.id,
   selector: 'app-modal-window',
   templateUrl: 'modal-window.component.html',
   styleUrls: ['modal-window.component.css'],
   directives: [
-    MdIcon
+    MdIcon,
+    JsonViewerComponent,
+    TimelineComponent
   ],
   providers: [MdIconRegistry]
 })

@@ -3,13 +3,16 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 
 import { events, event } from '../../shared/event.interface';
-
+import { Iscroll } from '../../shared/iscroll.directive';
 
 @Component({
   moduleId: module.id,
   selector: 'app-timeline',
   templateUrl: 'timeline.component.html',
-  styleUrls: ['timeline.component.css']
+  styleUrls: ['timeline.component.css'],
+  directives: [
+    Iscroll
+  ]
 })
 export class TimelineComponent implements OnInit {
   @Input() events: Observable<events>;
@@ -18,6 +21,7 @@ export class TimelineComponent implements OnInit {
   description: string;
   data: event[];
   selectedEvent: event;
+  highlightedEvent: event;
   keyterm = '';
   
   months = [
@@ -33,15 +37,27 @@ export class TimelineComponent implements OnInit {
       this.title = events.title;
       this.description = events.description;
       this.data = events.data;
+      this.data.forEach(item => {
+        item.title = item.title.length > 64 ? item.title.slice(0, 61) + '...' : item.title;
+      });
+      this.selectedEvent = this.data[0];
     })
   }
   
-  getDayOfYear(dateJSON: string){
+  getDayOfYear(dateJSON: string) {
     let date = new Date(dateJSON);
     return this.months[date.getMonth()].pos + date.getDate() - 1
   }
   
-  selectEvent(index){
-    this.selectedEvent = this.data[index]
+  selectEvent(index) {
+    this.selectedEvent = this.highlightedEvent;
+  }
+  
+  addHighlight(index) {
+    this.highlightedEvent = this.data[index];
+  }
+  
+  removeHighlight(index) {
+    // this.highlightedEvent = null;
   }
 }

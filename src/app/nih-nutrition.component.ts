@@ -43,20 +43,20 @@ export class NihNutritionAppComponent {
       visual: 'timeline'
     },
     {
-      title: 'NIH Spending Trend',
-      description: 'NIH spending trend on nutrition-related researches.',
+      title: 'NIH Funding Trends in Nutrition Research',
+      description: 'Comparison of NIH research funding trends in various nutrition-related areas.',
       source: 'nih-spending-trend.json',
       visual: 'barchart'
     },
     {
       title: 'Overview of NIH-Sponsored Projects',
-      description: 'NIH-sponsored research projects in nutrition research.',
+      description: 'Overview of NIH-sponsored research projects to advance our understanding in nutrition science.',
       source: 'nih-project-overview.json',
       visual: 'linechart'
     },
     {
-      title: 'Organization',
-      description: 'Overview of organizations supported by NIH grant.',
+      title: 'Geographical Distribution of NIH Organizations',
+      description: 'Geographical distribution of organizations supported by NIH grant in the United States.',
       source: 'nih-funded-organizations.json',
       visual: 'map'
     }
