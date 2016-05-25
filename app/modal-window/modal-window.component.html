@@ -9,7 +9,7 @@
   <h3>{{ entry.title }}</h3>
   <p style='margin-top:-18px; font-size:14px; color:rgba(0,0,0,0.54)'>{{ entry.description }}</p>
   
-  <div  [ngSwitch]='view'>
+  <!--<div  [ngSwitch]='view'>
     <div *ngSwitchWhen='"visual"'>
       <div [ngSwitch]='entry.visual'>
         <app-timeline *ngSwitchWhen='"timeline"' [events]='entry.data'></app-timeline> 
@@ -21,6 +21,6 @@
     <div *ngSwitchWhen='"data"' style='overflow-x:hidden; overflow-y:auto; width:800px; height:400px;'>
       <app-json-viewer [data]='entry.data'></app-json-viewer>
     </div>
-  </div>
+  </div>-->
 
 </div>
