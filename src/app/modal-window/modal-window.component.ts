@@ -2,6 +2,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Http } from '@angular/http';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
+import { TimelineComponent } from '../visual/timeline';
 import { JsonViewerComponent } from '../shared/json-viewer';
 
 @Component({
@@ -11,6 +12,7 @@ import { JsonViewerComponent } from '../shared/json-viewer';
   styleUrls: ['modal-window.component.css'],
   directives: [
     MdIcon,
+    TimelineComponent,
     JsonViewerComponent
   ],
   providers: [MdIconRegistry]

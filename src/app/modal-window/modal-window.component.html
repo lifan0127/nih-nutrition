@@ -11,7 +11,12 @@
   
   <div  [ngSwitch]='view'>
     <div *ngSwitchWhen='"visual"'>
-      <p>{{ entry.visual }}</p>
+      <div [ngSwitch]='entry.visual'>
+        <app-timeline *ngSwitchWhen='"timeline"' [events]='entry.data'></app-timeline> 
+        <p *ngSwitchWhen='"barchart"'>Bar Chart (in progress)</p>
+        <p *ngSwitchWhen='"linechart"'>Line Chart (in progress)</p>
+        <p *ngSwitchWhen='"map"'>Map (in progress)</p>
+      </div>
     </div>
     <div *ngSwitchWhen='"data"' style='overflow-x:hidden; overflow-y:auto; width:800px; height:400px;'>
       <app-json-viewer [data]='entry.data'></app-json-viewer>
