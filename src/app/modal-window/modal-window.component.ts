@@ -1,7 +1,8 @@
 /// <reference path="../../typings.d.ts" />
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Http } from '@angular/http';
-import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
+import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
+import { JsonViewerComponent } from '../shared/json-viewer';
 
 @Component({
   moduleId: module.id,
@@ -9,7 +10,8 @@ import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
   templateUrl: 'modal-window.component.html',
   styleUrls: ['modal-window.component.css'],
   directives: [
-    MdIcon
+    MdIcon,
+    JsonViewerComponent
   ],
   providers: [MdIconRegistry]
 })
