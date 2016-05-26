@@ -13,8 +13,8 @@
     <div *ngSwitchWhen='"visual"'>
       <p>{{ entry.visual }}</p>
     </div>
-    <div *ngSwitchWhen='"data"'>
-      <p>{{ entry.data | async | json }}</p>
+    <div *ngSwitchWhen='"data"' style='overflow-x:hidden; overflow-y:auto; width:800px; height:400px;'>
+      <app-json-viewer [data]='entry.data'></app-json-viewer>
     </div>
   </div>
 
