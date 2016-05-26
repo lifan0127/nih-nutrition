@@ -9,18 +9,13 @@
   <h3>{{ entry.title }}</h3>
   <p style='margin-top:-18px; font-size:14px; color:rgba(0,0,0,0.54)'>{{ entry.description }}</p>
   
-  <!--<div  [ngSwitch]='view'>
+  <div  [ngSwitch]='view'>
     <div *ngSwitchWhen='"visual"'>
-      <div [ngSwitch]='entry.visual'>
-        <app-timeline *ngSwitchWhen='"timeline"' [events]='entry.data'></app-timeline> 
-        <p *ngSwitchWhen='"barchart"'>Bar Chart (in progress)</p>
-        <p *ngSwitchWhen='"linechart"'>Line Chart (in progress)</p>
-        <p *ngSwitchWhen='"map"'>Map (in progress)</p>
-      </div>
+      <p>{{ entry.visual }}</p>
     </div>
-    <div *ngSwitchWhen='"data"' style='overflow-x:hidden; overflow-y:auto; width:800px; height:400px;'>
-      <app-json-viewer [data]='entry.data'></app-json-viewer>
+    <div *ngSwitchWhen='"data"'>
+      <p>{{ entry.data | async | json }}</p>
     </div>
-  </div>-->
+  </div>
 
 </div>
