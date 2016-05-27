@@ -3,7 +3,8 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 var map = {
-    '@angular2-material': 'vendor/@angular2-material'
+    '@angular2-material': 'vendor/@angular2-material',
+    'iscroll': 'vendor/iscroll/build'
 };
 /** User packages configuration. */
 var materialPackages = [
@@ -29,6 +30,11 @@ function createCustomConfig(packages) {
         return packageConfig;
     }, {});
 }
+/** User packages configuration. */
+packages['iscroll'] = {
+    main: 'iscroll.js',
+    format: 'cjs'
+};
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
  * Everything underneath this line is managed by the CLI.
