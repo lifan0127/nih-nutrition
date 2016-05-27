@@ -5,10 +5,6 @@ import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import { TimelineComponent } from '../visual/timeline';
 import { JsonViewerComponent } from '../shared/json-viewer';
 
-import { TimelineComponent } from '../visual/timeline';
-import { JsonViewerComponent } from '../shared/json-viewer';
-
-
 @Component({
   moduleId: module.id,
   selector: 'app-modal-window',
