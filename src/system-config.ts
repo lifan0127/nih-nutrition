@@ -4,7 +4,7 @@
 /** Map relative paths to URLs. */
 const map: any = {
   '@angular2-material': 'vendor/@angular2-material',
-  'iscroll': 'vendor/iscroll/build/iscroll.js'
+  'iscroll': 'vendor/iscroll/build'
 };
 
 /** User packages configuration. */
@@ -33,6 +33,12 @@ function createCustomConfig(packages: string[]): any {
     return packageConfig;
   }, {});
 }
+
+/** User packages configuration. */
+packages['iscroll'] = {
+    main: 'iscroll.js',
+    format: 'cjs'
+};
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************

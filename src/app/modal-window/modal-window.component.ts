@@ -1,7 +1,9 @@
 /// <reference path="../../typings.d.ts" />
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Http } from '@angular/http';
-import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
+import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
+import { TimelineComponent } from '../visual/timeline';
+import { JsonViewerComponent } from '../shared/json-viewer';
 
 import { TimelineComponent } from '../visual/timeline';
 import { JsonViewerComponent } from '../shared/json-viewer';

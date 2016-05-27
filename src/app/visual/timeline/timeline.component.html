@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     <!--<h4>{{ title }}</h4>
     <p>{{ description }}</p>-->
     <!--<input type="text" [(ngModel)]='keyterm'>-->
@@ -37,3 +38,44 @@
       </svg>
       </div>
     </div>
+=======
+<!--<h4>{{ title }}</h4>
+<p>{{ description }}</p>-->
+<!--<input type="text" [(ngModel)]='keyterm'>-->
+<div class='selected-event'>
+  <div>
+    <h4><a [href]='selectedEvent?.url' target='_blank'>{{ selectedEvent?.title }}</a></h4>
+    <p style='font-size: 12px;'>{{ selectedEvent?.date }}</p>
+    <p style='font-size: 12px;'>{{ selectedEvent?.description }}</p>
+  </div>
+</div>
+<div iscroll class='scrollable-div'>
+  <div>
+  <svg xmlns='http://www.w3.org/2000/svg' width='100%' [attr.height]='40+365*multiplier'>
+    <rect x='40' y='20' width='8' [attr.height]='365*multiplier' fill='#4EADFF'/>
+    <g *ngFor='let m of months'>
+      <text x='5' [attr.y]='25+m.pos*multiplier'>{{ m.mon }}</text>
+      <line x1='35' [attr.y1]='20+m.pos*multiplier' x2='53' [attr.y2]='20+m.pos*multiplier' stroke='#4EADFF' stroke-width='2' />
+    </g>
+    <g class='individual-event' *ngFor='let d of data; let i=index;' (mouseenter)='addHighlight(i)' (mouseleave)='removeHighlight(i)'>
+      <line x1='44' [attr.y1]='20+getDayOfYear(d.date)*multiplier' x2='66' 
+        [attr.y2]='20+getDayOfYear(d.date)*multiplier' stroke='#4EADFF' stroke-width='2' />
+      <circle cx='44' [attr.cy]='20+getDayOfYear(d.date)*multiplier' r='8' stroke='#4EADFF' 
+        stroke-width='4' fill='white' />
+      <rect x='66' [attr.y]='20+getDayOfYear(d.date)*multiplier-16' width='395' height='32' stroke='#4EADFF' stroke-width='2' fill='white' />
+      <text x='70' [attr.y]='20+getDayOfYear(d.date)*multiplier-4'>{{d.title}}</text>
+      <text x='70' [attr.y]='20+getDayOfYear(d.date)*multiplier+12' font-size='10'>{{d.date}}</text>
+    </g>
+    <g class='individual-event highlighted' *ngIf='highlightedEvent' (click)='selectEvent(i)' >
+      <line x1='44' [attr.y1]='20+getDayOfYear(highlightedEvent.date)*multiplier' x2='66' 
+        [attr.y2]='20+getDayOfYear(highlightedEvent.date)*multiplier' stroke='#4EADFF' stroke-width='2' />
+      <circle cx='44' [attr.cy]='20+getDayOfYear(highlightedEvent.date)*multiplier' r='8' stroke='#4EADFF' 
+        stroke-width='4' fill='white' />
+      <rect x='66' [attr.y]='20+getDayOfYear(highlightedEvent.date)*multiplier-16' width='395' height='32' stroke='#4EADFF' stroke-width='2' fill='white' />
+      <text x='70' [attr.y]='20+getDayOfYear(highlightedEvent.date)*multiplier-4'>{{highlightedEvent.title}}</text>
+      <text x='70' [attr.y]='20+getDayOfYear(highlightedEvent.date)*multiplier+12' font-size='10'>{{highlightedEvent.date}}</text>
+    </g>
+  </svg>
+  </div>
+</div>
+>>>>>>> iscroll

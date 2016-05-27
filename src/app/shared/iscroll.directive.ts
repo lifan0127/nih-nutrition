@@ -18,4 +18,8 @@ export class Iscroll {
     };
     this.iscroll = new IScroll(this.elementRef.nativeElement, iscrollOptions);
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> iscroll
