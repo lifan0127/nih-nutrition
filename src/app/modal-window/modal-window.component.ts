@@ -26,7 +26,7 @@ export class ModalWindowComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.entry.data = this.http.get('../../data/' + this.entry.source)
+    this.entry.data = this.http.get('data/' + this.entry.source)
                                .map(res => res.json())
   }
   
