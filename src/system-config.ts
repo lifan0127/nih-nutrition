@@ -63,6 +63,8 @@ const barrels: string[] = [
   'app/modal-window',
   'app/visual/timeline',
   'app/shared/json-viewer',
+  'app/visual/pie-circle',
+  'app/visual/piecircle',
   /** @cli-barrel */
 ];
 

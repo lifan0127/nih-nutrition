@@ -39,8 +39,8 @@ export class NihNutritionAppComponent {
     {
       title: 'Breakthroughs & Significant Events', 
       description: 'Timeline to visualize NIH breakthroughs and significant events on nutrition-related topics.',
-      source: 'nih-event-timeline.json',
-      visual: 'timeline'
+      source: 'nih-events.json',
+      visual: 'timeline-nih-events'
     },
     {
       title: 'NIH Funding Trends in Nutrition Research',
@@ -59,6 +59,12 @@ export class NihNutritionAppComponent {
       description: 'Geographical distribution of organizations supported by NIH grant in the United States.',
       source: 'nih-funded-organizations.json',
       visual: 'map'
+    },
+    {
+      title: 'US National Nutrition Research Roadmap',
+      description: 'Research priorities for human nutrition over the next five to ten years.',
+      source: 'nutrition-research-roadmap.json',
+      visual: 'piecircle-nutrition-research-roadmap'
     }
   ];
   entry: {title: string, description: string, source: string, visual: string};
