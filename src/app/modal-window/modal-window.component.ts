@@ -4,6 +4,7 @@ import { Http } from '@angular/http';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import { TimelineComponent } from '../visual/timeline';
 import { JsonViewerComponent } from '../shared/json-viewer';
+import { Iscroll } from '../shared/iscroll.directive';
 
 @Component({
   moduleId: module.id,
@@ -13,7 +14,8 @@ import { JsonViewerComponent } from '../shared/json-viewer';
   directives: [
     MdIcon,
     JsonViewerComponent,
-    TimelineComponent
+    TimelineComponent,
+    Iscroll
   ],
   providers: [MdIconRegistry]
 })

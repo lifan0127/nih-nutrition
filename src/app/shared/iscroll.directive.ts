@@ -1,4 +1,4 @@
-import { Directive, ElementRef, AfterViewInit } from '@angular/core';
+import { Directive, ElementRef, AfterViewInit, AfterViewChecked } from '@angular/core';
 import * as IScroll from 'iscroll';
 
 @Directive({
@@ -14,8 +14,17 @@ export class Iscroll {
   ngAfterViewInit() {
     let iscrollOptions: any = {
       mouseWheel: true,
-      scrollbars: true
+      scrollbars: true,
+      interactiveScrollbars: true
     };
     this.iscroll = new IScroll(this.elementRef.nativeElement, iscrollOptions);
+    // console.log(this.iscroll);
+  }
+  
+  ngAfterViewChecked() {
+    if(this.elementRef.nativeElement.children[0].offsetHeight) {
+      this.iscroll.refresh();
+    }
+    // console.log(this.elementRef.nativeElement.children[0].offsetHeight )
   }
 }

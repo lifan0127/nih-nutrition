@@ -1,9 +1,11 @@
 
 import { Component, OnInit, Input } from '@angular/core';
+import { NgClass } from '@angular/common';
 import { Observable } from 'rxjs/Observable';
 
 import { events, event } from '../../shared/event.interface';
 import { Iscroll } from '../../shared/iscroll.directive';
+import { ToDate } from '../../shared/to-date.pipe';
 
 @Component({
   moduleId: module.id,
@@ -12,6 +14,9 @@ import { Iscroll } from '../../shared/iscroll.directive';
   styleUrls: ['timeline.component.css'],
   directives: [
     Iscroll
+  ],
+  pipes: [
+    ToDate
   ]
 })
 export class TimelineComponent implements OnInit {
@@ -37,14 +42,26 @@ export class TimelineComponent implements OnInit {
       this.title = events.title;
       this.description = events.description;
       this.data = events.data;
-      this.data.forEach(item => {
-        item.title = item.title.length > 64 ? item.title.slice(0, 61) + '...' : item.title;
-      });
       this.selectedEvent = this.data[0];
     })
   }
   
-  getDayOfYear(dateJSON: string) {
+  stringDivider(string, width) {
+    if (string.length>width) {
+		var p=width
+        while (p>0 && !/\s/.test(string[p])) {
+			p--;
+        }
+        if (p>0) {
+            var left = [string.substring(0, p)];
+            var right = string.substring(p+1);
+            return left.concat(this.stringDivider(right, width));
+        }
+    }
+    return [string];
+  }
+  
+  getDayInYear(dateJSON: string) {
     let date = new Date(dateJSON);
     return this.months[date.getMonth()].pos + date.getDate() - 1
   }
