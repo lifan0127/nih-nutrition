@@ -12,10 +12,13 @@
   <div  [ngSwitch]='view'>
     <div *ngSwitchWhen='"visual"'>
       <div [ngSwitch]='entry.visual'>
-        <app-timeline *ngSwitchWhen='"timeline"' [events]='entry.data'></app-timeline> 
+        <app-timeline *ngSwitchWhen='"timeline-nih-events"' 
+          [events]='entry.data'></app-timeline> 
         <p *ngSwitchWhen='"barchart"'>Bar Chart (in progress)</p>
         <p *ngSwitchWhen='"linechart"'>Line Chart (in progress)</p>
         <p *ngSwitchWhen='"map"'>Map (in progress)</p>
+        <app-piecircle *ngSwitchWhen='"piecircle-nutrition-research-roadmap"' 
+          [themes]='entry.data'></app-piecircle>
       </div>
     </div>
     <div *ngSwitchWhen='"data"'>

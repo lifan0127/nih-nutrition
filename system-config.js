@@ -56,6 +56,8 @@ var barrels = [
     'app/modal-window',
     'app/visual/timeline',
     'app/shared/json-viewer',
+    'app/visual/pie-circle',
+    'app/visual/piecircle',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
