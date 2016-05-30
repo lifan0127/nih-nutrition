@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "angular-cli": {
+      "version": "1.0.0-beta.5",
+      "from": "angular-cli@1.0.0-beta.5",
+      "dependencies": {
+        "systemjs-builder": {
+          "version": "0.15.16",
+          "from": "systemjs-builder@0.15.16"
+        }
+      }
+    }
+  }
+}
