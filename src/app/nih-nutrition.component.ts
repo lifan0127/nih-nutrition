@@ -13,7 +13,7 @@ import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import { NihNutritionComponent } from './+nih-nutrition';
 import { VisualGalleryComponent } from './+visual-gallery';
 import { ModalWindowComponent } from './modal-window';
-import { ModalWindowService } from './shared/modal-window.service';
+// import { ModalWindowService } from './shared/modal-window.service';
 
 
 @Component({
@@ -68,20 +68,20 @@ export class NihNutritionAppComponent {
   ];
   
   constructor(
-    private router: Router,
-    private modalWindowService: ModalWindowService
+    private router: Router
+    // private modalWindowService: ModalWindowService
   ) {
-    modalWindowService.modalWinodwInput$.subscribe(
-      input => {
-        this.entry = input.entry;
-        this.view = input.view;
-      }
-    )
-    modalWindowService.modalWindowStatus$.subscribe(
-      status => {
-        this.modal = status;
-      }
-    )
+    // modalWindowService.modalWinodwInput$.subscribe(
+    //   input => {
+    //     this.entry = input.entry;
+    //     this.view = input.view;
+    //   }
+    // )
+    // modalWindowService.modalWindowStatus$.subscribe(
+    //   status => {
+    //     this.modal = status;
+    //   }
+    // )
    }
   
   ngOnInit() {
@@ -89,8 +89,8 @@ export class NihNutritionAppComponent {
     // this.modalWindowService
   }
   
-  closeModal(event) {
-    this.modalWindowService.updateStatus(false);
-  }
+  // closeModal(event) {
+  //   this.modalWindowService.updateStatus(false);
+  // }
 
 }
