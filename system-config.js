@@ -17,7 +17,8 @@ var materialPackages = [
     'card',
     'input',
     'radio',
-    'checkbox'
+    'checkbox',
+    'tabs'
 ];
 var packages = createCustomConfig(materialPackages);
 function createCustomConfig(packages) {
@@ -58,6 +59,8 @@ var barrels = [
     'app/shared/json-viewer',
     'app/visual/pie-circle',
     'app/visual/piecircle',
+    'app/+nih-nutrition',
+    'app/+visual-gallery',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {

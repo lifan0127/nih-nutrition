@@ -10,7 +10,7 @@
     </text>
     
     <g *ngFor='let t of topics; let i=index;'
-       (mouseenter)='addHighlight(i)' (mouseleave)='removeHighlight(i)'>
+       (mouseenter)='addHighlight(i)' (mouseleave)='removeHighlight()'>
       <g [ngSwitch]='t.id.slice(0,2)'>
         <circle *ngSwitchWhen='"Q1"'  
           [attr.cx]='250+t.x' [attr.cy]='200-t.y' r='18' fill='#4EADFF'/>
@@ -69,10 +69,11 @@
         discoveries in human nutrition?
       </textPath>
     </text>
-    <g *ngIf='selectedTopic'>
+    <g *ngIf='selectedTopic'
+      (mouseenter)='onSelected=true' (mouseleave)='onSelected=false;removeHighlight();'>
       <rect [attr.x]='250+selectedTopic.x' [attr.y]='200-selectedTopic.y-16' 
         width='400' [attr.height]='stringDivider(selectedTopic.topic, 64).length*12+10' 
-        fill='#FBFBFB' fill-opacity='0.9' />
+        fill='#FBFBFB' fill-opacity='0.95' />
         <text [attr.x]='250+selectedTopic.x+24' 
               [attr.y]='200-selectedTopic.y' font-size='12'>
           <tspan *ngFor='let t of stringDivider(selectedTopic.topic, 64); let j=index;' 
