@@ -48,6 +48,7 @@ import { ModalWindowService } from './shared/modal-window.service';
 
 ])
 export class NihNutritionAppComponent {
+  title = 'Analysis of NIH Spending on Nutrition Research';
   entry: {title: string, description: string, source: string, visual: string};
   modal = false;
   view = 'visual';
