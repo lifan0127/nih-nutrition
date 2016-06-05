@@ -15,8 +15,8 @@ describe('App: NihNutrition', () => {
     expect(app).toBeTruthy();
   }));
 
-  it('should have as title \'Analysis of NIH Spending on Nutrition Research\'',
+  it('should have as title \'Nutrition Research\'',
       inject([NihNutritionAppComponent], (app: NihNutritionAppComponent) => {
-    expect(app.title).toEqual('Analysis of NIH Spending on Nutrition Research');
+    expect(app.title).toEqual('Nutrition Research');
   }));
 });
