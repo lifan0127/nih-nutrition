@@ -38,8 +38,7 @@ import { ModalWindowService } from './shared/modal-window.service';
   ],
   providers: [
     MdIconRegistry, 
-    MdRadioDispatcher,
-    ModalWindowService
+    MdRadioDispatcher
   ]
 })
 @Routes([
