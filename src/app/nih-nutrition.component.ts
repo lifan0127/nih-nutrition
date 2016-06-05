@@ -1,15 +1,19 @@
 import { Component } from '@angular/core';
-import {MdToolbar} from '@angular2-material/toolbar';
-import {MdButton} from '@angular2-material/button';
-import {MD_SIDENAV_DIRECTIVES} from '@angular2-material/sidenav';
-import {MD_LIST_DIRECTIVES} from '@angular2-material/list';
-import {MD_CARD_DIRECTIVES} from '@angular2-material/card';
-import {MdInput} from '@angular2-material/input';
-import {MdCheckbox} from '@angular2-material/checkbox';
-import {MdRadioButton, MdRadioGroup, MdRadioDispatcher} from '@angular2-material/radio';
-import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
-
+import { ROUTER_DIRECTIVES, Routes, Router } from '@angular/router';
+import { MdToolbar} from '@angular2-material/toolbar';
+import { MdButton } from '@angular2-material/button';
+import { MD_SIDENAV_DIRECTIVES } from '@angular2-material/sidenav';
+import { MD_TABS_DIRECTIVES } from '@angular2-material/tabs/tabs';
+import { MD_LIST_DIRECTIVES } from '@angular2-material/list';
+import { MD_CARD_DIRECTIVES } from '@angular2-material/card';
+import { MdInput } from '@angular2-material/input';
+import { MdCheckbox } from '@angular2-material/checkbox';
+import { MdRadioButton, MdRadioGroup, MdRadioDispatcher } from '@angular2-material/radio';
+import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
+import { NihNutritionComponent } from './+nih-nutrition';
+import { VisualGalleryComponent } from './+visual-gallery';
 import { ModalWindowComponent } from './modal-window';
+import { ModalWindowService } from './shared/modal-window.service';
 
 
 @Component({
@@ -18,9 +22,11 @@ import { ModalWindowComponent } from './modal-window';
   templateUrl: 'nih-nutrition.component.html',
   styleUrls: ['nih-nutrition.component.css'],
   directives: [
+    ROUTER_DIRECTIVES,
     MD_SIDENAV_DIRECTIVES,
     MD_LIST_DIRECTIVES,
     MD_CARD_DIRECTIVES,
+    MD_TABS_DIRECTIVES,
     MdToolbar,
     MdButton,
     MdInput,
@@ -30,54 +36,61 @@ import { ModalWindowComponent } from './modal-window';
     MdIcon,
     ModalWindowComponent
   ],
-  providers: [MdIconRegistry, MdRadioDispatcher],
-
+  providers: [
+    MdIconRegistry, 
+    MdRadioDispatcher,
+    ModalWindowService
+  ]
 })
+@Routes([
+  {path: '/nih-nutrition', component: NihNutritionComponent},
+  {path: '/visual-gallery', component: VisualGalleryComponent}
+
+])
 export class NihNutritionAppComponent {
-  title = 'Analysis of NIH Spending on Nutrition Research';
-  visuals: Object[] = [
-    {
-      title: 'Breakthroughs & Significant Events', 
-      description: 'Timeline to visualize NIH breakthroughs and significant events on nutrition-related topics.',
-      source: 'nih-events.json',
-      visual: 'timeline-nih-events'
-    },
-    {
-      title: 'NIH Funding Trends in Nutrition Research',
-      description: 'Comparison of NIH research funding trends in various nutrition-related areas.',
-      source: 'nih-spending-trend.json',
-      visual: 'barchart'
-    },
-    {
-      title: 'Overview of NIH-Sponsored Projects',
-      description: 'Overview of NIH-sponsored research projects to advance our understanding in nutrition science.',
-      source: 'nih-project-overview.json',
-      visual: 'linechart'
-    },
-    {
-      title: 'Geographical Distribution of NIH Organizations',
-      description: 'Geographical distribution of organizations supported by NIH grant in the United States.',
-      source: 'nih-funded-organizations.json',
-      visual: 'map'
-    },
-    {
-      title: 'US National Nutrition Research Roadmap',
-      description: 'Research priorities for human nutrition over the next five to ten years.',
-      source: 'nutrition-research-roadmap.json',
-      visual: 'piecircle-nutrition-research-roadmap'
-    }
-  ];
   entry: {title: string, description: string, source: string, visual: string};
   modal = false;
   view = 'visual';
   
-  openModal(entry, view) {
-    this.entry = entry;
-    this.view = view;
-    this.modal = true;
+  views: Object[] = [
+    {
+      name: 'NIH Nutrition',
+      description: 'NIH-sponsored nutrition research',
+      icon: 'assignment ind',
+      route: '/nih-nutrition'
+    },
+    {
+      name: 'Visual Gallery',
+      description: 'Data visualization gallery',
+      icon: 'pets',
+      route: '/visual-gallery'
+    }
+  ];
+  
+  constructor(
+    private router: Router,
+    private modalWindowService: ModalWindowService
+  ) {
+    modalWindowService.modalWinodwInput$.subscribe(
+      input => {
+        this.entry = input.entry;
+        this.view = input.view;
+      }
+    )
+    modalWindowService.modalWindowStatus$.subscribe(
+      status => {
+        this.modal = status;
+      }
+    )
+   }
+  
+  ngOnInit() {
+    this.router.navigate(['/visual-gallery'])
+    // this.modalWindowService
   }
   
   closeModal(event) {
-    this.modal = false;
+    this.modalWindowService.updateStatus(false);
   }
+
 }

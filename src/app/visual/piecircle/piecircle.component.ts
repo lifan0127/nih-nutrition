@@ -16,7 +16,8 @@ export class PiecircleComponent implements OnInit {
   questions: string[];
   topics = [];
   circleRadius = 182;
-  selectedTopic: topic
+  selectedTopic: topic;
+  onSelected = false;
 
   constructor() {}
 
@@ -49,7 +50,14 @@ export class PiecircleComponent implements OnInit {
     this.selectedTopic = this.topics[index];
   }
   
-  removeHighlight(index) {
+  removeHighlight() {
+    if (!this.onSelected) {
+      setTimeout(() => {
+        if(!this.onSelected){
+          this.selectedTopic = null
+        }
+      }, 500);
+    }
     // this.selectedTopic = null;
   }
   

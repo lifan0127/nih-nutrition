@@ -18,7 +18,8 @@ const materialPackages:string[] = [
   'card',
   'input',
   'radio',
-  'checkbox'
+  'checkbox',
+  'tabs'
 ];
 
 const packages:any = createCustomConfig(materialPackages);
@@ -65,6 +66,8 @@ const barrels: string[] = [
   'app/shared/json-viewer',
   'app/visual/pie-circle',
   'app/visual/piecircle',
+  'app/+nih-nutrition',
+  'app/+visual-gallery',
   /** @cli-barrel */
 ];
 
