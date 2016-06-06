@@ -4,7 +4,7 @@ import { enableProdMode } from '@angular/core';
 import { HTTP_PROVIDERS } from '@angular/http';
 import 'rxjs/Rx';
 
-// import { ModalWindowService } from './app/shared/modal-window.service';
+import { ModalWindowService } from './app/shared/modal-window.service';
 import { NihNutritionAppComponent, environment } from './app/';
 
 if (environment.production) {
@@ -13,6 +13,6 @@ if (environment.production) {
 
 bootstrap(NihNutritionAppComponent, [
   HTTP_PROVIDERS,
-  ROUTER_PROVIDERS
-  // ModalWindowService
+  ROUTER_PROVIDERS,
+  ModalWindowService
 ]);
