@@ -1,0 +1,76 @@
+{
+    "title": "National Nutrition Research Roadmap 2016‒2021: Advancing Nutrition Research to Improve and Sustain Health",
+    "description": "This Roadmap was developed by the Interagency Committee on Human Nutrition Research (ICHNR) National Nutrition Research Roadmap (NNRR) Subcommittee, which included representatives from each of the participating ICHNR departments and agencies, 28 members in total. Sixteen members of the NNRR Subcommittee served on the NNRR Writing Group. The Roadmap identifies research priorities for human nutrition and describes the role of the ICHNR departments and agencies in addressing those priorities over the next five to ten years.",
+    "source": [
+        { 
+            "title": "NIH Nutrition Research Report 2011 & 2012", 
+            "url": "https://fnic.nal.usda.gov/surveys-reports-and-research/interagency-committee-human-nutrition-research" 
+        }
+    ],
+    "created": "2016-05-30T16:12:17.830Z",
+    "updated": "2016-05-30T16:12:17.830Z",
+    "data": [
+        {
+            "id": "Q1",
+            "question": "How can we better understand and define eating patterns to improve and sustain health?",
+            "topics": [
+                {
+                    "id": "Q1T1",
+                    "topic": "How do we enhance our understanding of the role of nutrition in health promotion and disease prevention and treatment?"
+                },
+                {
+                    "id": "Q1T2",
+                    "topic": "How do we enhance our understanding of individual differences in nutritional status and variability in response to diet?"
+                },
+                {
+                    "id": "Q1T3",
+                    "topic": "How do we enhance population-level food- and nutrition-related health monitoring systems and their integration with other data systems to increase our ability to evaluate change in nutritional and health status, as well as in the food supply, composition, and consumption?"
+                }
+            ]
+        },
+        {
+            "id": "Q2",
+            "question": "What can be done to help people choose healthy eating patterns?",
+            "topics": [
+                {
+                    "id": "Q2T1",
+                    "topic": "How can we more effectively characterize the interactions among the demographic, behavioral, lifestyle, social, cultural, economic, occupational, and environmental factors that influence eating choices?"
+                },
+                {
+                    "id": "Q2T2",
+                    "topic": "How do we develop, enhance and evaluate interventions at multiple levels to improve and sustain healthy eating patterns?"
+                },
+                {
+                    "id": "Q2T3",
+                    "topic": "How can simulation modeling that applies systems science in nutrition research be used to advance exploration of the impact of multiple interventions?"
+                },
+                {
+                    "id": "Q2T4",
+                    "topic": "How can interdisciplinary research identify effective approaches to enhance the environmental sustainability of healthy eating patterns?"
+                }
+            ]
+        },
+        {
+            "id": "Q3",
+            "question": "How can we develop and engage innovative methods and systems to accelerate discoveries in human nutrition?",
+            "topics": [
+                {
+                    "id": "Q3T1",
+                    "topic": "How can we enhance innovation in measuring dietary exposure, including use of biomarkers?"
+                },
+                {
+                    "id": "Q3T2",
+                    "topic": "How can basic biobehavioral science be applied to better understand eating behaviors?"
+                },
+                {
+                    "id": "Q3T3",
+                    "topic": "How can we use behavioral economics theories and other social science innovations to improve eating patterns?"
+                },
+                {
+                    "id": "Q3T4",
+                    "topic": "How can we advance nutritional sciences through the use of research innovations involving Big Data?"
+                }
+            ]
+        }
+    ]
+}

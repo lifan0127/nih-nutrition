@@ -1,0 +1,47 @@
+#timeline-container { 
+    width: 60%; 
+    height: 400px; 
+    position: relative;
+    overflow: hidden;
+}
+
+#timeline-container > div {
+    padding-right: 14px;
+}
+
+.selected-event { 
+    float: right; 
+    width: 40%;
+}
+
+svg { 
+    font-family: arial; 
+    font-size: 12px;
+}
+
+svg g.individual-event.highlighted:hover { 
+    cursor: pointer;
+}
+      
+svg g.individual-event.highlighted circle, 
+svg g.individual-event.highlighted rect { 
+    fill:#9DCAEF; 
+}
+
+.selected-event div {
+    padding-left: 8px;
+}
+
+.selected-event div h4 {
+        margin: 8px 0;
+}
+
+.selected-event div h4 a, .selected-event div h4 a:visited {
+    text-decoration: none;
+    color: #4EADFF;
+}
+
+svg g.individual-event.selected circle, 
+svg g.individual-event.selected rect { 
+    fill:#DFF1FF; 
+}
