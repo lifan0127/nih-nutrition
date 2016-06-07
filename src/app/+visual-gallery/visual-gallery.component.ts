@@ -9,7 +9,7 @@ import { MdInput } from '@angular2-material/input';
 import { MdCheckbox } from '@angular2-material/checkbox';
 import { MdRadioButton, MdRadioGroup, MdRadioDispatcher } from '@angular2-material/radio';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
-// import { ModalWindowService } from '../shared/modal-window.service';
+import { ModalWindowService } from '../';
 
 @Component({
   moduleId: module.id,
@@ -68,18 +68,18 @@ export class VisualGalleryComponent implements OnInit {
 
   
   constructor(
-    // private modalWindowService: ModalWindowService
+    private modalWindowService: ModalWindowService
   ) {}
 
   ngOnInit() {
   }
   
   openModal(entry, view) {
-    // this.modalWindowService.updateInput({
-    //   'entry': entry,
-    //   'view': view
-    // });
-    // this.modalWindowService.updateStatus(true);
+    this.modalWindowService.updateInput({
+      'entry': entry,
+      'view': view
+    });
+    this.modalWindowService.updateStatus(true);
   }
 
   // closeModal(event) {
