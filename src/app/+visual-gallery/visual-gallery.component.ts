@@ -9,7 +9,7 @@ import { MdInput } from '@angular2-material/input';
 import { MdCheckbox } from '@angular2-material/checkbox';
 import { MdRadioButton, MdRadioGroup, MdRadioDispatcher } from '@angular2-material/radio';
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
-import { ModalWindowService } from '../shared/modal-window.service';
+import { ModalWindowService } from '../modal-window.service';
 
 @Component({
   moduleId: module.id,

@@ -13,7 +13,7 @@ import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import { NihNutritionComponent } from './+nih-nutrition';
 import { VisualGalleryComponent } from './+visual-gallery';
 import { ModalWindowComponent } from './modal-window';
-import { ModalWindowService } from './shared/';
+import { ModalWindowService } from './modal-window.service';
 
 
 @Component({
