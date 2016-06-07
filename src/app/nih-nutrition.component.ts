@@ -13,7 +13,7 @@ import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import { NihNutritionComponent } from './+nih-nutrition';
 import { VisualGalleryComponent } from './+visual-gallery';
 import { ModalWindowComponent } from './modal-window';
-import { ModalWindowService } from './';
+import { ModalWindowService } from './shared/';
 
 
 @Component({
@@ -47,7 +47,7 @@ import { ModalWindowService } from './';
 
 ])
 export class NihNutritionAppComponent {
-  title = 'Nutrition Research';
+  title = 'Analysis of NIH Spending on Nutrition Research';
   entry: {title: string, description: string, source: string, visual: string};
   modal = false;
   view = 'visual';

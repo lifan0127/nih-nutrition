@@ -4,7 +4,7 @@ import { enableProdMode } from '@angular/core';
 import { HTTP_PROVIDERS } from '@angular/http';
 import 'rxjs/Rx';
 
-import { ModalWindowService } from './app/';
+import { ModalWindowService } from './app/shared/';
 import { NihNutritionAppComponent, environment } from './app/';
 
 if (environment.production) {
