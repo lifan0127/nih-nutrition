@@ -12,6 +12,7 @@ import { MdRadioButton, MdRadioGroup, MdRadioDispatcher } from '@angular2-materi
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
 import { NihNutritionComponent } from './+nih-nutrition';
 import { VisualGalleryComponent } from './+visual-gallery';
+import { IchnrRoadmapComponent } from './+ichnr-roadmap';
 import { ModalWindowComponent } from './modal-window';
 import { ModalWindowService } from './modal-window.service';
 
@@ -44,7 +45,9 @@ import { ModalWindowService } from './modal-window.service';
 })
 @Routes([
   {path: '/nih-nutrition', component: NihNutritionComponent},
-  {path: '/visual-gallery', component: VisualGalleryComponent}
+  {path: '/visual-gallery', component: VisualGalleryComponent},
+  {path: '/ichnr-roadmap', component: IchnrRoadmapComponent}
+
 
 ])
 export class NihNutritionAppComponent {
@@ -61,9 +64,15 @@ export class NihNutritionAppComponent {
       route: '/nih-nutrition'
     },
     {
+      name: 'ICHNR Roadmap',
+      description: 'Nutrition research 2016-2021',
+      icon: 'map',
+      route: '/ichnr-roadmap'
+    },
+    {
       name: 'Visual Gallery',
       description: 'Data visualization gallery',
-      icon: 'pets',
+      icon: 'dashboard',
       route: '/visual-gallery'
     }
   ];
@@ -86,7 +95,7 @@ export class NihNutritionAppComponent {
    }
   
   ngOnInit() {
-    this.router.navigate(['/visual-gallery'])
+    this.router.navigate(['/ichnr-roadmap']);
     // this.modalWindowService
   }
   

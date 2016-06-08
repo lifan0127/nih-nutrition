@@ -5,7 +5,14 @@
   <div>
     <h4><a [href]='selectedEvent?.url' target='_blank'>{{ selectedEvent?.title }}</a></h4>
     <p style='font-size: 12px;'>{{ selectedEvent?.date | toDate | date:'fullDate' }}</p>
-    <p style='font-size: 12px;'>{{ selectedEvent?.description }}</p>
+    <div *ngIf='selectedEvent?.image'>
+      <div style='color: #999; width: 48%; float: right'>
+        {{ selectedEvent?.image[0].caption }}
+      </div>
+      <img style='width:50%;'  
+        [src]='"image/"+selectedEvent?.image[0].file' alt=''>
+    </div>
+    <p style='font-size: 14px;'>{{ selectedEvent?.description }}</p>
   </div>
 </div>
 <div iscroll id='timeline-container'>

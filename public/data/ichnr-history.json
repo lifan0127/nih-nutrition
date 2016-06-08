@@ -1,0 +1,81 @@
+{
+    "title": "The History of ICHNR (Interagency Committee on Human Nutrition Research)",
+    "description": "The Interagency Committee on Human Nutrition Research (ICHRN) is charged with improving the planning, coordination, and communication among federal agencies engaged in nutrition research. The trans-federal government committee includes members from: Agricultural Research Service, Food and Drug Administration, National Institutes of Health, National Institute of Standards and Technology, Environmental Protection Agency, National Science Foundation etc.",
+    "source": [
+        { 
+            "title": "Interagency Committee on Human Nutrition Research", 
+            "url": "https://fnic.nal.usda.gov/surveys-reports-and-research/interagency-committee-human-nutrition-research" 
+        }, 
+        {
+            "title": "USDA Human Nutrition Center, 1978–1982, and Coordination of Human Nutrition Research Agencies",
+            "url": "http://jn.nutrition.org/content/139/1/185.full"
+        },
+        {
+            "title": "United States Senate Select Committee on Nutrition and Human Needs",
+            "url": "https://en.wikipedia.org/wiki/United_States_Senate_Select_Committee_on_Nutrition_and_Human_Needs"
+        }
+    ],
+    "created": "2016-06-08T10:38:11.586Z",
+    "updated": "2016-06-08T21:27:46.405Z",
+    "data": [
+        {
+            "date": "2011-02-01T00:00:00.000Z",
+            "rdate": "1968-01-01T00:00:00.000Z",
+            "title": "Senate Select Committee on Nutrition and Related Human Needs",
+            "description": "The impetus for formation of the committee was a rising concern about hunger and malnutrition in the United States. Existing Senate and House committees were uninterested in pursuing the issue. Senator George McGovern of South Dakota gathered 38 co-sponsors for the committee's creation, a resolution quickly passed the Senate, and McGovern was named the committee's chair in July 1968.",
+            "url": "https://en.wikipedia.org/wiki/United_States_Senate_Select_Committee_on_Nutrition_and_Human_Needs",
+            "image": [
+                {
+                    "file": "d56c1f77-b8c3-49c7-a379-aa841d4b543c.jpg", 
+                    "caption": "George Stanley McGovern was an American historian, author, U.S. Representative, U.S. Senator, and the Democratic Party presidential nominee in the 1972 presidential election."
+                }
+            ]
+        },
+        {
+            "date": "2011-03-02T00:00:00.000Z",
+            "rdate": "1969-12-02T00:00:00.000Z",
+            "title": "White House Conference on Food, Nutrition and Health",
+            "description": "The White House Conference on Food, Nutrition and Health was convened at the behest of President Richard M. Nixon to focus national attention on the nutritional needs and problems of all Americans. Conference participants included educators, scientists, medical and health professionals, representatives of agriculture and the food industry, federal, state and local government officials, religious denominations, women's and professional organizations and spokesmen for consumer and social-action groups, including the poor. The conclusions of the conference were to be translated into a plan of action to be implemented by the administration.",
+            "url": "https://www.nixonlibrary.gov/forresearchers/find/textual/central/smof/whcofnh.php",
+            "image": [
+                {
+                    "file": "3182b66f-b0a2-4e0a-8bcb-c854f0f3b877.jpg", 
+                    "caption": "The White House Conference on Food, Nutrition and Health was convened at the behest of President Richard M. Nixon to focus national attention on the nutritional needs and problems of all Americans."
+                }
+            ]
+        },
+        {
+            "date": "2011-04-01T00:00:00.000Z",
+            "rdate": "1972-01-01T00:00:00.000Z",
+            "title": "ARS Reorganized to Improve Coordination of Agricultural Research Programs",
+            "description": "To improve efficiency of conducting multidisciplinary research, ARS (Agricultural Research Service) was reorganized in 1972, and a National Program Staff was established to enhance the development and coordination of National Research Programs. The intent was to create multidisciplinary teams to more effectively solve agricultural problems.",
+            "url": "http://jn.nutrition.org/content/139/1/185.full",
+            "image": [
+                {
+                    "file": "52a49cd3-d1d2-42e7-9cab-17ad4187ab5a.jpg", 
+                    "caption": "The Agricultural Research Service is the principal in-house research agency of the United States Department of Agriculture. ARS is one of four agencies in USDA's Research, Education and Economics mission area."
+                }
+            ]
+        },
+        {
+            "date": "2011-06-01T00:00:00.000Z",
+            "rdate": "1976-01-01T00:00:00.000Z",
+            "title": "Edminster Proposed to Expand Human Nutrition Research in ARS",
+            "description": "Talcott W. Edminster, the Administrator of the Agricultural Research Service (ARS) in USDA, proposed to Senator George McGovern, Chairman of the Select Committee on Nutrition and Human Needs, a greatly expanded program for human nutrition research in ARS, signaling a turning point of human nutrition research in USDA.",
+            "url": "http://jn.nutrition.org/content/139/1/185.full",
+            "image": [
+                {
+                    "file": "359a8a91-6e24-41f7-8771-1aebaafbd49c.jpg", 
+                    "caption": "A 1965 picture of Research Agricultural Engineer, Essex Finney; the ARS Administrator, Dr. George W. Irving; the Chief of the Instrumentation Research Laboratory, Carl H. Norris; and the Deputy Administrator of ARS, Talcott W. Edminster."
+                }
+            ]
+        },
+        {
+            "date": "2011-09-01T00:00:00.000Z",
+            "rdate": "1978-01-01T00:00:00.000Z",
+            "title": "Creation of the Science and Education Administration (SEA)",
+            "description": "A new agency, the  Science and Education Administration (SEA) was created in USDA by merging the ARS, the Cooperative State Research Service, the Extension Service, and the National Agricultural Library (NAL). This reorganization was a further effort to increase cooperation and coordination in conducting research and education activities. The USDA Human Nutrition Center was established as a component of the SEA.",
+            "url": "http://jn.nutrition.org/content/139/1/185.full"
+        }  
+    ]
+}

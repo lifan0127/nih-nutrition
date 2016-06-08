@@ -68,6 +68,7 @@ const barrels: string[] = [
   'app/visual/piecircle',
   'app/+nih-nutrition',
   'app/+visual-gallery',
+  'app/+ichnr-roadmap',
   /** @cli-barrel */
 ];
 
