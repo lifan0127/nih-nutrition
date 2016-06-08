@@ -61,6 +61,7 @@ var barrels = [
     'app/visual/piecircle',
     'app/+nih-nutrition',
     'app/+visual-gallery',
+    'app/+ichnr-roadmap',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {

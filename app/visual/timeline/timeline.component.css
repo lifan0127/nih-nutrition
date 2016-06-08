@@ -1,5 +1,5 @@
 #timeline-container { 
-    width: 60%; 
+    width: 45%; 
     height: 400px; 
     position: relative;
     overflow: hidden;
@@ -11,7 +11,7 @@
 
 .selected-event { 
     float: right; 
-    width: 40%;
+    width: 55%;
 }
 
 svg { 
@@ -33,7 +33,8 @@ svg g.individual-event.highlighted rect {
 }
 
 .selected-event div h4 {
-        margin: 8px 0;
+    margin: 8px 0;
+    font-size: 18px;
 }
 
 .selected-event div h4 a, .selected-event div h4 a:visited {
